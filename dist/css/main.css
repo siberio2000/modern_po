@@ -1,3 +1,26 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 45px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 1.0s ease-out; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 1.0s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(1px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      display: none;
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(135deg) translate(0px, 5px); }
+
 * {
   box-sizing: border-box; }
 
@@ -59,7 +82,7 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #eece1a;
-        transition: all 2.0s ease-out; }
+        transition: all 1.0s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
